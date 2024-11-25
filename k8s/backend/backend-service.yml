@@ -1,8 +1,7 @@
-# service.yaml
-
 apiVersion: v1
 kind: Service
 metadata:
+  namespace: capstone-gbc
   name: my-node-backend-service
 spec:
   type: NodePort
