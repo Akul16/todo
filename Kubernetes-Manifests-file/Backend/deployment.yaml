@@ -29,7 +29,7 @@ spec:
           imagePullPolicy: Always
           env:
             - name: MONGO_CONN_STR
-              value: MONGODB_URI = mongodb+srv://mongodb-svc@cluster0.1cimm.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
+              value: mongodb://mongodb-svc:27017/todo?directConnection=true
             - name: MONGO_USERNAME
               valueFrom:
                 secretKeyRef:
